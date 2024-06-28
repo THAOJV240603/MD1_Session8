@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toán tử tăng</title>
+</head>
+<body>
+    <script>
+        let a = 6;
+        let result = ++a + a + a++ + ++a + a;
+
+        console.log(a)
+        console.log(result)
+
+        // + là phép cộng
+        // ++ là tăng một giá trị
+        // ++a: tăng lên 1 rồi mới cộng a
+        // a++: cộng a rồi tăng lên một giá trị
+        
+        // Giá trị ban đầu của a là 6, a tăng lên 1 giá trị, lúc này a = 7, 
+        // a lại tiếp tục tăng lên 2 giá trị => Giá trị cuối cùng của a là 9
+
+        // Biến result ban đầu có giá trị 0,  tăng lên 1 rồi mới cộng a, lúc này result = 7,
+        // tiếp tục cộng với a (=6), lúc này result = 13
+        // a + (a tăng lên 1 = 7) = 13, lúc này result = 26
+        // (result +  1 = 27) + a (a=6) = 33, lúc này result = 33
+        // (result = 33) + (a=6) = 39, kết quả cuối cùng của result là 39
+    </script>
+</body>
+</html>

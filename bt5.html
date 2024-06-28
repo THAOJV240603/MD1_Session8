@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Điểm trung bình</title>
+</head>
+<body>
+    <script>       
+        var VatLy = prompt("Nhập điểm môn Vật lý: ");
+        var HoaHoc = prompt("Nhập điểm môn Hóa học: ");
+        var SinhHoc = prompt("Nhập điểm môn Sinh học: ");
+     
+        var tong = parseFloat(VatLy) + parseFloat(HoaHoc) + parseFloat(SinhHoc);
+        var dtb = parseFloat(tong / 3);
+        dtb = dtb.toFixed(2);
+        alert("Điểm tổng là: " + tong)
+        alert("Điểm trung bình là: " + dtb)
+
+    </script>
+</body>
+</html>
